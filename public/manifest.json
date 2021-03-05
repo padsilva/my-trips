@@ -1,6 +1,6 @@
 {
-  "name": "Boilerplate TypeScript",
-  "short_name": "Boilerplate",
+  "name": "My Trips",
+  "short_name": "My Trips",
   "icons": [
     {
       "src": "/favicon/favicon-16x16.png",
@@ -30,7 +30,7 @@
     }
   ],
   "background_color": "#ffffff",
-  "description": "A boilerplate to work with TypeScript, React, NextJS and Styled Components",
+  "description": "A simple project to show some of my trips",
   "display": "fullscreen",
   "start_url": "/",
   "theme_color": "#ffffff"
