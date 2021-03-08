@@ -62,6 +62,7 @@ export const GET_PLACE_BY_SLUG = gql`
         html
       }
       gallery {
+        id
         url
         height
         width

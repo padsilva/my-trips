@@ -1,6 +1,7 @@
 // import * as S from './styles'
 
 type ImageProps = {
+  id: string
   url: string
   height: number
   width: number
@@ -23,8 +24,8 @@ const PlacesTemplate = ({ place }: PlacesTemplateProps) => (
 
     <div dangerouslySetInnerHTML={{ __html: place.description.html }} />
 
-    {place.gallery.map((image, index) => (
-      <img key={`photo-${index}`} src={image.url} alt={place.name} />
+    {place.gallery.map((image) => (
+      <img key={`photo-${image.id}`} src={image.url} alt={place.name} />
     ))}
   </>
 )

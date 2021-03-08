@@ -2420,7 +2420,7 @@ export type GetPlaceBySlugQuery = (
       & Pick<RichText, 'html'>
     )>, gallery: Array<(
       { __typename?: 'Asset' }
-      & Pick<Asset, 'url' | 'height' | 'width'>
+      & Pick<Asset, 'id' | 'url' | 'height' | 'width'>
     )> }
   )> }
 );
