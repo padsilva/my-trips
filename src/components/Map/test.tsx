@@ -18,6 +18,6 @@ describe('<Map />', () => {
     render(<Map places={places} />)
 
     expect(screen.getByTitle(/bombarral/i)).toBeInTheDocument()
-    expect(screen.getByTitle(/padova/i)).toBeInTheDocument()
+    expect(screen.getByTitle(/padua/i)).toBeInTheDocument()
   })
 })

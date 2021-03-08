@@ -14,12 +14,12 @@ export default [
   },
   {
     id: '2',
-    name: 'Padova',
-    slug: 'padova',
+    name: 'Padua',
+    slug: 'padua',
     location: {
       latitude: 45.416667,
       longitude: 11.866667
     },
-    description: `Padova is a city and comune in Veneto, northern Italy.`
+    description: `Padua is a city and comune in Veneto, northern Italy.`
   }
 ]
