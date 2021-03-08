@@ -1,5 +1,5 @@
 import { GetStaticProps } from 'next'
-import { useRouter } from 'next/dist/client/router'
+import { useRouter } from 'next/router'
 
 import client from 'graphql/client'
 import { GetPlacesQuery, GetPlaceBySlugQuery } from 'graphql/generated/graphql'
