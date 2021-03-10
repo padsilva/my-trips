@@ -2,7 +2,7 @@ export default {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://www.url.ie/', //todo
+    url: 'https://padsilva-trips.vercel.app',
     site_name: 'My Trips'
   },
   twitter: {

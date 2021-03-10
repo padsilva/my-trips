@@ -30,7 +30,7 @@
     }
   ],
   "background_color": "#ffffff",
-  "description": "A simple project to show some of my trips",
+  "description": "A simple project to show some of my favorite places.",
   "display": "fullscreen",
   "start_url": "/",
   "theme_color": "#ffffff"

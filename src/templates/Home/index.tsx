@@ -11,15 +11,15 @@ const HomeTemplate = ({ places }: MapProps) => (
   <>
     <NextSeo
       title="My Trips"
-      description="A simple project to show some of my trips"
-      canonical="https://www.url.ie/"
+      description="A simple project to show some of my favorite places."
+      canonical="https://padsilva-trips.vercel.app"
       openGraph={{
-        url: 'https://www.url.ie/',
+        url: 'https://padsilva-trips.vercel.app',
         title: 'My Trips',
-        description: 'A simple project to show some of my trips',
+        description: 'A simple project to show some of my favorite places.',
         images: [
           {
-            url: 'https://www.url.ie/img/cover.png',
+            url: 'https://padsilva-trips.vercel.app/img/cover.png',
             width: 1280,
             height: 720,
             alt: 'My Trips'
