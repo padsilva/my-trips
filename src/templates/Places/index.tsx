@@ -1,6 +1,6 @@
 import { NextSeo } from 'next-seo'
 import Image from 'next/image'
-import { CloseOutline } from '@styled-icons/evaicons-outline'
+import { Close } from '@styled-icons/material-outlined'
 
 import LinkWrapper from 'components/LinkWrapper'
 
@@ -53,7 +53,7 @@ const PlacesTemplate = ({ place }: PlacesTemplateProps) => (
     />
 
     <LinkWrapper href="/">
-      <CloseOutline size={32} />
+      <Close size={32} />
     </LinkWrapper>
 
     <S.Wrapper>

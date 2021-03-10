@@ -1,4 +1,4 @@
-import { CloseOutline } from '@styled-icons/evaicons-outline'
+import { Close } from '@styled-icons/material-outlined'
 
 import LinkWrapper from 'components/LinkWrapper'
 
@@ -12,7 +12,7 @@ export type PagesTemplateProps = {
 const PagesTemplate = ({ heading, body }: PagesTemplateProps) => (
   <S.Content>
     <LinkWrapper href="/">
-      <CloseOutline size={32} />
+      <Close size={32} />
     </LinkWrapper>
 
     <S.Heading>{heading}</S.Heading>
