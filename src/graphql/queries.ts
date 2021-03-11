@@ -39,6 +39,9 @@ export const GET_PLACES = gql`
       description {
         html
       }
+      reference {
+        html
+      }
       gallery {
         url
         height
@@ -62,6 +65,9 @@ export const GET_PLACE_BY_SLUG = gql`
       description {
         html
         text
+      }
+      reference {
+        html
       }
       gallery {
         id

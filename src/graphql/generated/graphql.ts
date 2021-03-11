@@ -1625,6 +1625,7 @@ export type Place = Node & {
   slug: Scalars['String'];
   location: Location;
   description?: Maybe<RichText>;
+  reference?: Maybe<RichText>;
   gallery: Array<Asset>;
   visited: Scalars['Boolean'];
   /** List of Place versions */
@@ -1681,6 +1682,7 @@ export type PlaceCreateInput = {
   slug: Scalars['String'];
   location: LocationInput;
   description?: Maybe<Scalars['RichTextAST']>;
+  reference?: Maybe<Scalars['RichTextAST']>;
   gallery: AssetCreateManyInlineInput;
   visited: Scalars['Boolean'];
 };
@@ -1850,6 +1852,7 @@ export type PlaceUpdateInput = {
   slug?: Maybe<Scalars['String']>;
   location?: Maybe<LocationInput>;
   description?: Maybe<Scalars['RichTextAST']>;
+  reference?: Maybe<Scalars['RichTextAST']>;
   gallery?: Maybe<AssetUpdateManyInlineInput>;
   visited?: Maybe<Scalars['Boolean']>;
 };
@@ -1874,6 +1877,7 @@ export type PlaceUpdateManyInlineInput = {
 export type PlaceUpdateManyInput = {
   name?: Maybe<Scalars['String']>;
   description?: Maybe<Scalars['RichTextAST']>;
+  reference?: Maybe<Scalars['RichTextAST']>;
   visited?: Maybe<Scalars['Boolean']>;
 };
 
@@ -2407,6 +2411,9 @@ export type GetPlacesQuery = (
     ), description?: Maybe<(
       { __typename?: 'RichText' }
       & Pick<RichText, 'html'>
+    )>, reference?: Maybe<(
+      { __typename?: 'RichText' }
+      & Pick<RichText, 'html'>
     )>, gallery: Array<(
       { __typename?: 'Asset' }
       & Pick<Asset, 'url' | 'height' | 'width'>
@@ -2430,6 +2437,9 @@ export type GetPlaceBySlugQuery = (
     ), description?: Maybe<(
       { __typename?: 'RichText' }
       & Pick<RichText, 'html' | 'text'>
+    )>, reference?: Maybe<(
+      { __typename?: 'RichText' }
+      & Pick<RichText, 'html'>
     )>, gallery: Array<(
       { __typename?: 'Asset' }
       & Pick<Asset, 'id' | 'url' | 'height' | 'width'>

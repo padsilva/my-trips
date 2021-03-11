@@ -21,6 +21,9 @@ export type PlacesTemplateProps = {
       html: string
       text: string
     }
+    reference?: {
+      html: string
+    }
     gallery: ImageProps[]
   }
 }
@@ -67,6 +70,14 @@ const PlacesTemplate = ({ place }: PlacesTemplateProps) => (
             }}
           />
         </S.Body>
+
+        <S.Reference>
+          <div
+            dangerouslySetInnerHTML={{
+              __html: place.reference?.html || ''
+            }}
+          />
+        </S.Reference>
 
         <S.Gallery>
           {place.gallery.map((image) => (

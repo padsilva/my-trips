@@ -15,10 +15,20 @@ export const Heading = styled.h1`
 `
 
 export const Body = styled.div`
-  margin-bottom: var(--large);
+  margin-bottom: var(--small);
 
   p {
-    margin-bottom: var(--medium);
+    text-align: justify;
+    text-justify: inter-word;
+  }
+`
+
+export const Reference = styled.cite`
+  * {
+    font-size: var(--small);
+  }
+  p {
+    margin-bottom: var(--large);
   }
 `
 
