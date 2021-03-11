@@ -1,9 +1,9 @@
 import { useRouter } from 'next/router'
 import { MapContainer, TileLayer, Marker, MapConsumer } from 'react-leaflet'
-import { Bookmark, Home, Star } from '@styled-icons/material'
-import ReactDOMServer from 'react-dom/server'
 import Leaflet from 'leaflet'
 
+import Legend from 'components/Legend'
+import { BookmarkIcon, HomeIcon, StarIcon } from 'icons'
 import { mapView } from './config'
 
 import * as S from './styles'
@@ -29,17 +29,11 @@ const Map = ({ places }: MapProps) => {
   const router = useRouter()
 
   const customMarkerIcon = (place: Place) => {
-    const iconSVG =
-      place.slug === home ? (
-        <Home aria-label="Home" />
-      ) : place.visited ? (
-        <Star aria-label="Already visited place" />
-      ) : (
-        <Bookmark aria-label="Wish to vistit" />
-      )
+    const iconHTML =
+      place.slug === home ? HomeIcon : place.visited ? StarIcon : BookmarkIcon
 
     return new Leaflet.DivIcon({
-      html: ReactDOMServer.renderToString(iconSVG),
+      html: iconHTML,
       iconSize: [24, 24],
       iconAnchor: [12, 18],
       popupAnchor: [0, -24]
@@ -73,6 +67,7 @@ const Map = ({ places }: MapProps) => {
             map.addEventListener('dragend', () => {
               mapView.setView(map.getCenter())
             })
+
             map.addEventListener('zoomend', () => {
               mapView.setView(map.getCenter(), map.getZoom())
             })
@@ -85,6 +80,8 @@ const Map = ({ places }: MapProps) => {
           attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
+
+        <Legend />
 
         {places?.map((place) => (
           <Marker
