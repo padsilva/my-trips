@@ -10,6 +10,10 @@ import GlobalStyle from 'styles/global'
 const App = ({ Component, pageProps }: AppProps) => (
   <>
     <Head>
+      <meta
+        name="google-site-verification"
+        content="pM0VV9O2-QE_DFgTJpfdEQu9st9jxjHU8PQVAORwCLc"
+      />
       <link
         rel="apple-touch-icon"
         sizes="180x180"
