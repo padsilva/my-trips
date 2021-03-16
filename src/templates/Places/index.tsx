@@ -85,8 +85,8 @@ const PlacesTemplate = ({ place }: PlacesTemplateProps) => (
               key={`photo-${image.id}`}
               src={image.url}
               alt={place.name}
-              width={1000}
-              height={600}
+              width={image.width}
+              height={image.height}
               quality={75}
             />
           ))}
