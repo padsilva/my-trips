@@ -9,7 +9,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
   const { places } = await client.request<GetPlacesQuery>(GET_PLACES)
 
   const fields = places.map(({ slug }) => ({
-    loc: `https://padsilva-trips.vercel.app/${slug}`, // Absolute url
+    loc: `https://padsilva-trips.vercel.app/place/${slug}`, // Absolute url
     lastmod: new Date().toISOString()
   }))
 
