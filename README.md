@@ -1,8 +1,74 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# :earth_africa: My Trips
 
-## Getting Started
+A simple project to show some of my favorite places.
 
-First, run the development server:
+## :warning: Getting Started
+
+### GraphCMS
+
+This project uses [GraphCMS](https://graphcms.com/), so you need to create an account there first.
+
+#### 1. Create Project
+
+First, you need to create a project, giving a name and a pick a region of your choise.
+
+#### 2. Create Model and Fields
+
+After that, you need to create the Schema and Fields. From the sidebar, navigate to the Schema editor and follow the steps:
+
+- Create a new Model called `Place`
+- Add the following fields:
+
+  - `Single line text` as `name`
+  - `Slug` as `slug`
+  - `Map` as `location`
+  - `Rich text` as `description`
+  - `Rich text` as `reference`
+  - `Asset picker` as `gallery`
+  - `Boolean` as `visited`
+
+- Create a new Model called `Page`
+- Add the following Fields:
+  - `Single line text` as `heading`
+  - `Slug` as `slug`
+  - `Rich text` as `body`
+
+#### 3. Add Content
+
+Now add some content to the new models and don't forget to `publish`!
+
+#### 4. Authentication
+
+In order to create a token access, go to `Settings > API Access`, inside this page, find `Permanent Auth Tokens`,
+create a Token Name and mark all queries possible. Save and get the token.
+
+### NextJS
+
+After creating your account on [GraphCMS](https://graphcms.com/) and following the steps above, you just need to execute the following steps:
+
+- Clone the project
+
+```bash
+  git clone https://github.com/padsilva/my-trips
+```
+
+- Go to the project directory
+
+```bash
+  cd my-trips
+```
+
+- Install dependencies
+
+```bash
+npm install
+# or
+yarn install
+```
+
+- Rename the `.env.example` to `.env.local` (if you plan to run locally) and edit the keys there.
+
+- Run the development server:
 
 ```bash
 npm run dev
@@ -12,23 +78,18 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## :computer: Commands
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- `dev`: runs your application on `localhost:3000`
+- `build`: creates the production build version
+- `start`: starts a simple server with the build production code
+- `lint`: runs the linter in all components and pages
+- `test`: runs jest to test all components and pages
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## :construction_worker: Author
 
-## Learn More
+[@padsilva](https://www.github.com/padsilva)
 
-To learn more about Next.js, take a look at the following resources:
+## :mailbox: Feedback
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+If you have any feedback, please reach out to me at pauloalexandreduartesilva@gmail.com.
