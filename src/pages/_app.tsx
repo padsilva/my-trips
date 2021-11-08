@@ -1,6 +1,6 @@
 import { AppProps } from 'next/app'
 import Head from 'next/head'
-import NextNprogress from 'nextjs-progressbar'
+import NextNProgress from 'nextjs-progressbar'
 import { DefaultSeo } from 'next-seo'
 
 import SEO from '../../next-seo.config'
@@ -48,7 +48,7 @@ const App = ({ Component, pageProps }: AppProps) => (
     </Head>
     <DefaultSeo {...SEO} />
     <GlobalStyle />
-    <NextNprogress
+    <NextNProgress
       color="#29D"
       startPosition={0.3}
       stopDelayMs={200}

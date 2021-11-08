@@ -87,7 +87,7 @@ const PlacesTemplate = ({ place }: PlacesTemplateProps) => (
               alt={place.name}
               width={image.width}
               height={image.height}
-              quality={75}
+              layout="responsive"
             />
           ))}
         </S.Gallery>
