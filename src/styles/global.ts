@@ -31,15 +31,10 @@ const GlobalStyle = createGlobalStyle`
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
   }
 
-  p,
-  a {
+  p {
     font-size: 2rem;
     line-height: var(--medium);
   }
-
-  // a {
-  //   color: var(--highlight);
-  // }
 `
 
 export default GlobalStyle
