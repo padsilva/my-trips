@@ -2,7 +2,7 @@
 
 A simple project to show some of my favorite places.
 
-## :warning: Getting Started
+## :rocket: Getting Started
 
 ### GraphCMS
 
