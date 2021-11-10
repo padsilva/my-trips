@@ -10,7 +10,7 @@ This project uses [GraphCMS](https://graphcms.com/), so you need to create an ac
 
 #### 1. Create Project
 
-First, you need to create a project, giving a name and a pick a region of your choise.
+First, you need to create a project, giving a name and pick a region of your choise.
 
 #### 2. Create Model and Fields
 
