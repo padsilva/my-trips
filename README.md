@@ -44,26 +44,26 @@ create a Token Name and mark all queries possible. Save and get the token.
 
 ### NextJS
 
-After creating your account on [GraphCMS](https://graphcms.com/) and following the steps above, you just need to execute the following steps:
+After creating your account on [GraphCMS](https://graphcms.com/) and following the previous steps, you just need to execute the next steps:
 
-- Clone the project
+- Clone the project:
 
 ```bash
   git clone https://github.com/padsilva/my-trips
 ```
 
-- Go to the project directory
+- Go to the project directory:
 
 ```bash
   cd my-trips
 ```
 
-- Install dependencies
+- Install dependencies:
 
 ```bash
-npm install
-# or
-yarn install
+  npm install
+  # or
+  yarn
 ```
 
 - Rename the `.env.example` to `.env.local` (if you plan to run locally) and edit the keys there.
@@ -71,9 +71,9 @@ yarn install
 - Run the development server:
 
 ```bash
-npm run dev
-# or
-yarn dev
+  npm run dev
+  # or
+  yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
